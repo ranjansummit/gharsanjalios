@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>354525378970-k3moddfjch22a62qas9jpeja7a23s2d1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.354525378970-k3moddfjch22a62qas9jpeja7a23s2d1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCf4UVPwsgcIIj3J2jDB0JhvylMmYaqnP8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>354525378970</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andmine.BhatBhate</string>
+	<key>PROJECT_ID</key>
+	<string>bhatbhate-4b32f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bhatbhate-4b32f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:354525378970:ios:34fb510bcdf2a0ba</string>
+	<key>DATABASE_URL</key>
+	<string>https://bhatbhate-4b32f.firebaseio.com</string>
+</dict>
+</plist>

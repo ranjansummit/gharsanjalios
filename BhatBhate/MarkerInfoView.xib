@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarkerInfoView" customModule="BhatBhate" customModuleProvider="target">
+            <connections>
+                <outlet property="buyerMobile" destination="3PX-fk-bV9" id="VpI-Wk-0TD"/>
+                <outlet property="buyerName" destination="d53-Od-TLg" id="WCU-gS-uMo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwd-Ju-D9t">
+                    <rect key="frame" x="9" y="33" width="42" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM0-4L-tIQ">
+                    <rect key="frame" x="9" y="58" width="43.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-fk-bV9">
+                    <rect key="frame" x="62.5" y="58" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buyer's Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-lm-1UC">
+                    <rect key="frame" x="35.5" y="6.5" width="132" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d53-Od-TLg">
+                    <rect key="frame" x="61" y="32.5" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7hD-lm-1UC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="750-A9-BWx"/>
+                <constraint firstItem="Rwd-Ju-D9t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="8ci-4y-KRJ"/>
+                <constraint firstItem="7hD-lm-1UC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="0.18" id="92s-zh-6mO"/>
+                <constraint firstItem="Rwd-Ju-D9t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="0.5" id="AUb-FM-hAT"/>
+                <constraint firstItem="d53-Od-TLg" firstAttribute="centerY" secondItem="Rwd-Ju-D9t" secondAttribute="centerY" id="EnY-tw-Zxc"/>
+                <constraint firstItem="d53-Od-TLg" firstAttribute="leading" secondItem="Rwd-Ju-D9t" secondAttribute="trailing" constant="10" id="JRy-VH-7cn"/>
+                <constraint firstItem="WM0-4L-tIQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="0.8" id="NH7-Cz-CZF"/>
+                <constraint firstItem="WM0-4L-tIQ" firstAttribute="leading" secondItem="Rwd-Ju-D9t" secondAttribute="leading" id="PG9-qn-jnZ"/>
+                <constraint firstItem="3PX-fk-bV9" firstAttribute="centerY" secondItem="WM0-4L-tIQ" secondAttribute="centerY" id="S93-VG-ZMr"/>
+                <constraint firstItem="3PX-fk-bV9" firstAttribute="leading" secondItem="WM0-4L-tIQ" secondAttribute="trailing" constant="10" id="UDY-Xr-0cm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-41.5" y="-222.5"/>
+        </view>
+    </objects>
+</document>

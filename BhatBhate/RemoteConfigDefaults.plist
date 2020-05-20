@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>build</key>
+	<string>10</string>
+	<key>review</key>
+	<string>0</string>
+	<key>app_review_14</key>
+	<string>0</string>
+	<key>current_ios_build</key>
+	<string>7</string>
+	<key>app_store_url</key>
+	<string>itms-apps://itunes.apple.com/us/app/workplace-by-facebook/id944921229</string>
+</dict>
+</plist>
