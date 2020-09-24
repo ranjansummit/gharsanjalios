@@ -40,7 +40,7 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
     private var motionManager: CMMotionManager?
     private var currentDeviceOrientation: UIDeviceOrientation?
     private var zoomFactor: CGFloat = 1.0
-    private var shutterClicked = false
+
     static func instance() -> FSCameraView {
         return UINib(nibName: "FSCameraView", bundle: Bundle(for: self.classForCoder())).instantiate(withOwner: self, options: nil)[0] as! FSCameraView
     }
@@ -55,12 +55,12 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
         flashOnImage = fusumaFlashOnImage != nil ? fusumaFlashOnImage : UIImage(named: "ic_flash_on", in: bundle, compatibleWith: nil)
         flashOffImage = fusumaFlashOffImage != nil ? fusumaFlashOffImage : UIImage(named: "ic_flash_off", in: bundle, compatibleWith: nil)
         let flipImage = fusumaFlipImage != nil ? fusumaFlipImage : UIImage(named: "ic_loop", in: bundle, compatibleWith: nil)
-        let shotImage = fusumaShotImage != nil ? fusumaShotImage : UIImage(named: "camera", in: bundle, compatibleWith: nil)
+        let shotImage = fusumaShotImage != nil ? fusumaShotImage : UIImage(named: "ic_shutter", in: bundle, compatibleWith: nil)
 
         flashButton.tintColor = fusumaBaseTintColor
         flipButton.tintColor  = fusumaBaseTintColor
         shotButton.tintColor  = fusumaBaseTintColor
-        shutterClicked = false
+
         flashButton.setImage(flashOffImage?.withRenderingMode(.alwaysTemplate), for: .normal)
         flipButton.setImage(flipImage?.withRenderingMode(.alwaysTemplate), for: .normal)
         shotButton.setImage(shotImage?.withRenderingMode(.alwaysTemplate), for: .normal)
@@ -127,9 +127,6 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
     func startCamera() {
         switch AVCaptureDevice.authorizationStatus(for: AVMediaType.video) {
         case .authorized:
-            self.shotButton.isEnabled = true
-            self.flashButton.isEnabled = true
-            self.flipButton.isEnabled = true
             session?.startRunning()
 
             motionManager = CMMotionManager()
@@ -145,9 +142,6 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
             }
         case .denied, .restricted:
             stopCamera()
-            self.shotButton.isEnabled = false
-            self.flashButton.isEnabled = false
-            self.flipButton.isEnabled = false
         default:
             break
         }
@@ -160,16 +154,6 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
     }
 
     @IBAction func shotButtonPressed(_ sender: UIButton) {
-        
-        if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) != .authorized {
-            return
-        }
-        
-        if shutterClicked {
-            return
-        }
-        
-        shutterClicked = true
         guard let imageOutput = imageOutput else {
             return
         }

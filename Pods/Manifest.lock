@@ -117,7 +117,7 @@ PODS:
   - Starscream (3.0.6)
   - SwiftyJSON (4.2.0)
   - SwiftyUserDefaults (3.0.1)
-  - SwipeCellKit (2.5.1)
+  - SwipeCellKit (2.6.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -135,10 +135,10 @@ DEPENDENCIES:
   - Starscream (~> 3.0.2)
   - SwiftyJSON
   - SwiftyUserDefaults
-  - SwipeCellKit (from `https://github.com/SwipeCellKit/SwipeCellKit.git`, branch `develop`)
+  - SwipeCellKit (= 2.6.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - Bolts
     - Crashlytics
@@ -168,22 +168,13 @@ SPEC REPOS:
     - Starscream
     - SwiftyJSON
     - SwiftyUserDefaults
-
-EXTERNAL SOURCES:
-  SwipeCellKit:
-    :branch: develop
-    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
-
-CHECKOUT OPTIONS:
-  SwipeCellKit:
-    :commit: e5e29ede0eb99774e7d67dbdc7de35ff0ec5e9ab
-    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
+    - SwipeCellKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
-  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Crashlytics: a33af323773f73904037dc2e684cd2f0d29f4fe2
+  Fabric: 09ef2d9b99b104702bede1acaf469fb8f20a9146
   FacebookCore: 9ecbe48cfd37c91a93add7f8cec2b4a2c50a1eec
   FacebookLogin: bdaea5789e9b364fa8a1990ba3bbba4fd2197415
   FacebookShare: 14e88f2dcc3a03376304d2a1e10254296076ce88
@@ -209,8 +200,8 @@ SPEC CHECKSUMS:
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
-  SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
+  SwipeCellKit: 935ca28c187ec6e1ffb2b578cf8ddca842bfdcbb
 
-PODFILE CHECKSUM: 51d11d4a7cfdb888dbe3814a54979cc626df298d
+PODFILE CHECKSUM: 01ce66152cd948deab10791064a7381daf229956
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.9.3

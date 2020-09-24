@@ -8,7 +8,7 @@
 
 import Foundation
 import Starscream
-import EsewaSDK
+//import EsewaSDK
 struct Constants {
     
     static let schemeDevelopment = false // true for uat false for production
@@ -25,12 +25,12 @@ struct Constants {
         return schemeDevelopment ? "http://uat.bhatbhate.net/api/v1/esewa/redirect" : "http://bhatbhate.net/api/v1/esewa/redirect"
     }
     
-    struct Esewa {
-        static let sandbox = false // true for test account false for real account
-        static var merchantID:String { return Esewa.sandbox ? "KBYXFAkSBRFZMRYWA1sHDhYNCBYXFAkSBRE=" : "JxsEAwMbChEcXz01WiQgRicxJCcnPyAnLg=="}
-        static var merchantSecret:String{return Esewa.sandbox ? "ERYWA08QBAhXERYWA08QBAhXERYWA08QBAg=" : "DQcRB1tcRAcRBAcHHwAHDksXAAdLFA4eRQscEV0HHwAHCQ0YERY=" }
-        static var environment: EsewaSDKEnvironment{
-            return sandbox ? .development : .production
-        }
-    }
+//    struct Esewa {
+//        static let sandbox = false // true for test account false for real account
+//        static var merchantID:String { return Esewa.sandbox ? "KBYXFAkSBRFZMRYWA1sHDhYNCBYXFAkSBRE=" : "JxsEAwMbChEcXz01WiQgRicxJCcnPyAnLg=="}
+//        static var merchantSecret:String{return Esewa.sandbox ? "ERYWA08QBAhXERYWA08QBAhXERYWA08QBAg=" : "DQcRB1tcRAcRBAcHHwAHDksXAAdLFA4eRQscEV0HHwAHCQ0YERY=" }
+//        static var environment: EsewaSDKEnvironment{
+//            return sandbox ? .development : .production
+//        }
+//    }
 }

@@ -102,7 +102,7 @@ final class FSAlbumView: UIView, UICollectionViewDataSource, UICollectionViewDel
 
         // Never load photos Unless the user allows to access to photo album
         checkPhotoAuth()
-        //delegate?.albumShouldEnableDoneButton(isEnabled: true)
+
         // Sorting condition
         let options = PHFetchOptions()
         options.sortDescriptors = [
@@ -166,9 +166,9 @@ final class FSAlbumView: UIView, UICollectionViewDataSource, UICollectionViewDel
             let currentPos = sender.location(in: self)
 
             if dragDirection == Direction.up && currentPos.y < cropBottomY - dragDiff {
-//                imageCropViewConstraintTop.constant = max(imageCropViewMinimalVisibleHeight - imageCropViewContainer.frame.height, currentPos.y + dragDiff - imageCropViewContainer.frame.height)
-//
-//                collectionViewConstraintHeight.constant = min(frame.height - imageCropViewMinimalVisibleHeight, frame.height - imageCropViewConstraintTop.constant - imageCropViewContainer.frame.height)
+                imageCropViewConstraintTop.constant = max(imageCropViewMinimalVisibleHeight - imageCropViewContainer.frame.height, currentPos.y + dragDiff - imageCropViewContainer.frame.height)
+
+                collectionViewConstraintHeight.constant = min(frame.height - imageCropViewMinimalVisibleHeight, frame.height - imageCropViewConstraintTop.constant - imageCropViewContainer.frame.height)
             } else if dragDirection == Direction.down && currentPos.y > cropBottomY {
                 imageCropViewConstraintTop.constant = min(imageCropViewOriginalConstraintTop, currentPos.y - imageCropViewContainer.frame.height)
 

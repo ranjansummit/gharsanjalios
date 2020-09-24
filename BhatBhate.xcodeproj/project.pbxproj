@@ -109,28 +109,12 @@
 		E47D92EC20DB506C00AEB483 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D92EB20DB506C00AEB483 /* MarkerInfoView.swift */; };
 		E4874D4821DC54510020E33B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4874D4721DC54510020E33B /* GoogleService-Info.plist */; };
 		E49330261F1C8FC100912414 /* SellLandingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49330251F1C8FC100912414 /* SellLandingTableViewCell.swift */; };
-		E4A58F4E21F7094300F8DF7B /* EsewaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58F4C21F7006400F8DF7B /* EsewaSDK.framework */; };
-		E4A58F4F21F7094300F8DF7B /* EsewaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58F4C21F7006400F8DF7B /* EsewaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4C2DCBD1FF0A6A500151DD4 /* SellNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2DCBC1FF0A6A500151DD4 /* SellNotificationViewController.swift */; };
 		E4C2DCBF1FF0B15400151DD4 /* SellNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2DCBE1FF0B15400151DD4 /* SellNotificationTableViewCell.swift */; };
 		E4CAF13F21EC2682000E6B76 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CAF13E21EC2682000E6B76 /* RemoteConfigDefaults.plist */; };
 		E4FEDE911F1F334B00BD5C79 /* AddPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FEDE901F1F334B00BD5C79 /* AddPhotosViewController.swift */; };
 		E4FEDE931F1F378000BD5C79 /* CameraApertureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FEDE921F1F378000BD5C79 /* CameraApertureViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E4DA193D20D7999B0078768F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E4A58F4F21F7094300F8DF7B /* EsewaSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		300A409D1FFCB996009DDE50 /* BuyNotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyNotificationModel.swift; sourceTree = "<group>"; };
@@ -254,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2ADCA4B161D2F46ED507920 /* Pods_BhatBhate.framework in Frameworks */,
-				E4A58F4E21F7094300F8DF7B /* EsewaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +665,6 @@
 				39A8CF6FB4731F1C429EA406 /* [CP] Embed Pods Frameworks */,
 				A53618FCDBFDC702EE700599 /* [CP] Copy Pods Resources */,
 				E43D876920C68F6E0021E0F0 /* ShellScript */,
-				E4DA193D20D7999B0078768F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -700,12 +682,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = Andmine;
 				TargetAttributes = {
 					3065B88E1F1710F900CBF37F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 55Z2G9C58Y;
+						DevelopmentTeam = 2UZH5H23YH;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -724,6 +706,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -770,7 +753,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -811,7 +794,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A53618FCDBFDC702EE700599 /* [CP] Copy Pods Resources */ = {
@@ -820,7 +803,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
@@ -831,7 +814,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BhatBhate/Pods-BhatBhate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2D9482D9FD55A14E14DA3D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1007,6 +990,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1067,6 +1051,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1123,7 +1108,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BhatBhate/BhatBhate.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 55Z2G9C58Y;
+				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1144,7 +1129,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BhatBhate/BhatBhate.entitlements;
-				DEVELOPMENT_TEAM = 55Z2G9C58Y;
+				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

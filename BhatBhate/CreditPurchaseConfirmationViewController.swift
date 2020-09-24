@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyUserDefaults
-import EsewaSDK
+//import EsewaSDK
 import SwiftyUserDefaults
 import SwiftyJSON
 class CreditPurchaseConfirmationViewController: RootViewController, CreditPurchaseConfirmationViewPresentation {
@@ -31,7 +31,7 @@ class CreditPurchaseConfirmationViewController: RootViewController, CreditPurcha
     public var afterEsewaPaymentSucceded = false
     public var productID:String!
     public var alphaCodeValues:[String:JSON]!
-    var esewaSDK: EsewaSDK!
+//    var esewaSDK: EsewaSDK!
     fileprivate var presenter: CreditPurchaseConfirmationPresenter!
     
     override func viewDidLoad() {
@@ -155,37 +155,39 @@ class CreditPurchaseConfirmationViewController: RootViewController, CreditPurcha
     }
     
     @IBAction func onProceedButtonTap(_ sender: Any) {
-        switch currentPurchaseType {
-        case .qr:
-            self.presenter.purchaseQRBasedCredit()
-        case .alphaCode:
-            self.presenter.purchaseAlphaCodeBasedCredit()
-        case .esewa:
-            esewaSDK = EsewaSDK(inViewController: self, environment: Constants.Esewa.environment, delegate: self)
-            let amount = valueLabel3.text?.replacingOccurrences(of: "Rs ", with: "")
-//            print("merchant id",Constants.Esewa.merchantID)
-//            print("merchant secret= ",Constants.Esewa.merchantSecret)
-//            print("environment= ",Constants.Esewa.environment)
-            esewaSDK.initiatePayment(merchantId: Constants.Esewa.merchantID, merchantSecret: Constants.Esewa.merchantSecret, productName: "Credit Purchase", productAmount: amount!, productId: productID, callbackUrl: Constants.esewaRedirectURL)
-        }
+//        switch currentPurchaseType {
+//        case .qr:
+//            self.presenter.purchaseQRBasedCredit()
+//        case .alphaCode:
+//            self.presenter.purchaseAlphaCodeBasedCredit()
+//        case .esewa:
+//            esewaSDK = EsewaSDK(inViewController: self, environment: Constants.Esewa.environment, delegate: self)
+//            let amount = valueLabel3.text?.replacingOccurrences(of: "Rs ", with: "")
+////            print("merchant id",Constants.Esewa.merchantID)
+////            print("merchant secret= ",Constants.Esewa.merchantSecret)
+////            print("environment= ",Constants.Esewa.environment)
+//            esewaSDK.initiatePayment(merchantId: Constants.Esewa.merchantID, merchantSecret: Constants.Esewa.merchantSecret, productName: "Credit Purchase", productAmount: amount!, productId: productID, callbackUrl: Constants.esewaRedirectURL)
+//        }
     }
     
 }
 /*
  ["productName": "A.M. Nepal Pvt. Ltd.", "environment": "H", "transactionDetails": ["referenceId": "01FLJSP", "date": "Fri Jun 08 14:06:54 GMT+05:45 2018", "status": "COMPLETE"], "code": "00", "totalAmount": "500.0", "merchantName": "A.M. Nepal Pvt. Ltd.", "productID": "121528446065", "message": ["successMessage": "Your transaction has been completed.", "technicalSuccessMessage": "Your transaction has been completed."]]
  */
-extension CreditPurchaseConfirmationViewController:EsewaSDKPaymentDelegate{
-    func onEsewaSDKPaymentSuccess(info: [String : Any]) {
-      //  print("esewa response", info)
-        self.getTransactionDetails(detailsValue: info)
-    }
-    
-    func onEsewaSDKPaymentError(errorDescription: String) {
-        //print("esewa failure response",errorDescription)
-        DispatchQueue.main.async {
-            self.showAlert(title: "", message: errorDescription)
-        }
-    }
-    
-    
-}
+// this is commented as we do not need esewa right now
+
+//extension CreditPurchaseConfirmationViewController:EsewaSDKPaymentDelegate{
+//    func onEsewaSDKPaymentSuccess(info: [String : Any]) {
+//      //  print("esewa response", info)
+//        self.getTransactionDetails(detailsValue: info)
+//    }
+//
+//    func onEsewaSDKPaymentError(errorDescription: String) {
+//        //print("esewa failure response",errorDescription)
+//        DispatchQueue.main.async {
+//            self.showAlert(title: "", message: errorDescription)
+//        }
+//    }
+//
+//
+//}

@@ -107,9 +107,9 @@ public struct ImageMetadata {
     public var photoSelectionLimit: Int = 1
     public var autoSelectFirstImage: Bool = false
 
-    private var mode: FusumaMode = .camera
+    private var mode: FusumaMode = .library
 
-    public var availableModes: [FusumaMode] = [.camera, .library]
+    public var availableModes: [FusumaMode] = [.library, .camera]
     public var cameraPosition = AVCaptureDevice.Position.back
 
     @IBOutlet weak var photoLibraryViewerContainer: UIView!
@@ -144,7 +144,7 @@ public struct ImageMetadata {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.hex("012d6c", alpha: 1.0)//fusumaBackgroundColor
+        self.view.backgroundColor = fusumaBackgroundColor
 
         cameraView.delegate = self
         albumView.delegate  = self
@@ -154,18 +154,18 @@ public struct ImageMetadata {
         cameraButton.setTitle(fusumaCameraTitle, for: .normal)
         videoButton.setTitle(fusumaVideoTitle, for: .normal)
 
-        menuView.backgroundColor = UIColor.hex("012d6c", alpha: 1.0)//fusumaBackgroundColor
-        //menuView.addBottomBorder(UIColor.black, width: 1.0)
+        menuView.backgroundColor = fusumaBackgroundColor
+        menuView.addBottomBorder(UIColor.black, width: 1.0)
 
         albumView.allowMultipleSelection = allowMultipleSelection
         albumView.photoSelectionLimit = photoSelectionLimit
         albumView.autoSelectFirstImage = autoSelectFirstImage
 
-        libraryButton.tintColor = .white//fusumaTintColor
-        cameraButton.tintColor  = .white//fusumaTintColor
+        libraryButton.tintColor = fusumaTintColor
+        cameraButton.tintColor  = fusumaTintColor
         videoButton.tintColor   = fusumaTintColor
-        closeButton.tintColor   = .white//fusumaTintColor
-        doneButton.tintColor    = .white//fusumaTintColor
+        closeButton.tintColor   = fusumaTintColor
+        doneButton.tintColor    = fusumaTintColor
 
         let bundle     = Bundle(for: self.classForCoder)
         let checkImage = fusumaCheckImage != nil ? fusumaCheckImage : UIImage(named: "ic_check", in: bundle, compatibleWith: nil)
@@ -182,7 +182,7 @@ public struct ImageMetadata {
         cameraShotContainer.addSubview(cameraView)
         videoShotContainer.addSubview(videoView)
 
-        titleLabel.textColor = .white//fusumaTintColor
+        titleLabel.textColor = fusumaTintColor
         titleLabel.font      = fusumaTitleFont
 
         if availableModes.count == 0 || availableModes.count >= 4 {
@@ -567,9 +567,9 @@ private extension FusumaViewController {
     }
 
     func dishighlightButtons() {
-        cameraButton.setTitleColor(.white, for: .normal)
+        cameraButton.setTitleColor(fusumaBaseTintColor, for: .normal)
         if let libraryButton = libraryButton {
-            libraryButton.setTitleColor(.white, for: .normal)
+            libraryButton.setTitleColor(fusumaBaseTintColor, for: .normal)
         }
 
         if let videoButton = videoButton {
@@ -578,7 +578,7 @@ private extension FusumaViewController {
     }
 
     func highlightButton(_ button: UIButton) {
-        button.setTitleColor(.red, for: .normal)
+        button.setTitleColor(fusumaTintColor, for: .normal)
     }
 
     func getTabButton(mode: FusumaMode) -> UIButton {

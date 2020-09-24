@@ -20,7 +20,7 @@ target 'BhatBhate' do
     pod 'Firebase/RemoteConfig'
     pod 'Crashlytics'
     #pod 'Answers'
-    pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
+    pod 'SwipeCellKit', '2.6.0'
     #pod 'Socket.IO-Client-Swift', '~> 13.1.0'
     pod 'Starscream', '~> 3.0.2'
     pod 'Fusuma'
