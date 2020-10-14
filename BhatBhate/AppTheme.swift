@@ -17,6 +17,10 @@ struct AppTheme {
         
         static let backgroundBlue = UIColor.from(r: 225, g: 229, b: 242, a: 1.0) //#E1E5F2
         
+        static let gradyellow = UIColor.from(r: 255, g: 247, b: 4, a: 1.0) //#E1E5F2
+        static let gradgreen = UIColor.from(r: 110, g: 255, b: 12, a: 1.0) //#E1E5F2
+
+        
         static let textGrey = UIColor.from(r: 159, g: 159, b: 159, a: 1.0) //#9F9F9F
         static let textBlue = UIColor.from(r: 97, g: 111, b: 155, a: 1.0) //#616F9B
         

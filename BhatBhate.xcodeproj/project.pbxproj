@@ -86,6 +86,7 @@
 		30EB03931F2599EA0029ED5E /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EB03921F2599EA0029ED5E /* WishlistViewController.swift */; };
 		30EB03951F259A1B0029ED5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EB03941F259A1B0029ED5E /* ProfileViewController.swift */; };
 		30F8819A2004970C00625862 /* CreditQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F881992004970C00625862 /* CreditQRCode.swift */; };
+		3EA67D79253779A500D63ACE /* Uiveewext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA67D78253779A500D63ACE /* Uiveewext.swift */; };
 		C2ADCA4B161D2F46ED507920 /* Pods_BhatBhate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17CCCCD4600FCA5737CE3E3 /* Pods_BhatBhate.framework */; };
 		E416109F1FCBFB3600FA3C4D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416109E1FCBFB3600FA3C4D /* RegistrationViewController.swift */; };
 		E42B89F820AD739B00413118 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B89F720AD739B00413118 /* TermsAndConditionViewController.swift */; };
@@ -198,6 +199,7 @@
 		30EB03921F2599EA0029ED5E /* WishlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		30EB03941F259A1B0029ED5E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		30F881992004970C00625862 /* CreditQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditQRCode.swift; sourceTree = "<group>"; };
+		3EA67D78253779A500D63ACE /* Uiveewext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uiveewext.swift; sourceTree = "<group>"; };
 		65C917ADABF606429C02FE2F /* Pods-BhatBhate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhatBhate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate.release.xcconfig"; sourceTree = "<group>"; };
 		B17CCCCD4600FCA5737CE3E3 /* Pods_BhatBhate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhatBhate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD31925520ECE3817468A76 /* Pods-BhatBhate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhatBhate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				30738D5A1FB99E170010F5C0 /* PurchaseCreditPopup.swift */,
 				30B3D2061FBA9C0D00845262 /* PopupContainer.swift */,
 				30B3D2081FBAA5C700845262 /* AnimationChain.swift */,
+				3EA67D78253779A500D63ACE /* Uiveewext.swift */,
 				309E57E51FFB1E6E0020B31F /* CreditSellerMarker.swift */,
 			);
 			name = Views;
@@ -885,6 +888,7 @@
 				E45C0D43204113220036BD6B /* ResetPasswordViewController.swift in Sources */,
 				301EE6A3200EEA6200E08C30 /* CreditPurchaseConfirmationPresenter.swift in Sources */,
 				30D9A28A1F17211600344674 /* MoreLandingViewController.swift in Sources */,
+				3EA67D79253779A500D63ACE /* Uiveewext.swift in Sources */,
 				30D5DE1520119746009A0F46 /* UserInformationFormController.swift in Sources */,
 				E46C6048205A0D8200733EDC /* CollectInfoNavViewController.swift in Sources */,
 				30D9A2931F17220A00344674 /* Api.swift in Sources */,
