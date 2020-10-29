@@ -87,6 +87,9 @@
 		30EB03951F259A1B0029ED5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EB03941F259A1B0029ED5E /* ProfileViewController.swift */; };
 		30F8819A2004970C00625862 /* CreditQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F881992004970C00625862 /* CreditQRCode.swift */; };
 		3EA67D79253779A500D63ACE /* Uiveewext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA67D78253779A500D63ACE /* Uiveewext.swift */; };
+		3EA67D7B253EE8E300D63ACE /* GifyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA67D7A253EE8E300D63ACE /* GifyExt.swift */; };
+		3ED4C4422548934B00752847 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4C4412548934A00752847 /* loader.gif */; };
+		3ED4C44A254B2A4800752847 /* Values.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4C449254B2A4800752847 /* Values.plist */; };
 		C2ADCA4B161D2F46ED507920 /* Pods_BhatBhate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17CCCCD4600FCA5737CE3E3 /* Pods_BhatBhate.framework */; };
 		E416109F1FCBFB3600FA3C4D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416109E1FCBFB3600FA3C4D /* RegistrationViewController.swift */; };
 		E42B89F820AD739B00413118 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B89F720AD739B00413118 /* TermsAndConditionViewController.swift */; };
@@ -200,6 +203,9 @@
 		30EB03941F259A1B0029ED5E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		30F881992004970C00625862 /* CreditQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditQRCode.swift; sourceTree = "<group>"; };
 		3EA67D78253779A500D63ACE /* Uiveewext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uiveewext.swift; sourceTree = "<group>"; };
+		3EA67D7A253EE8E300D63ACE /* GifyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyExt.swift; sourceTree = "<group>"; };
+		3ED4C4412548934A00752847 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loader.gif; path = ../../../../Downloads/loader.gif; sourceTree = "<group>"; };
+		3ED4C449254B2A4800752847 /* Values.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Values.plist; sourceTree = "<group>"; };
 		65C917ADABF606429C02FE2F /* Pods-BhatBhate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhatBhate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate.release.xcconfig"; sourceTree = "<group>"; };
 		B17CCCCD4600FCA5737CE3E3 /* Pods_BhatBhate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhatBhate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD31925520ECE3817468A76 /* Pods-BhatBhate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhatBhate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BhatBhate/Pods-BhatBhate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -402,6 +408,7 @@
 				30D9A2951F17226000344674 /* AppTheme.swift */,
 				30C4D7771F9DA3E6003A0DB0 /* AppError.swift */,
 				303BE44F1FB931AB00486785 /* UserDefaultsExtension.swift */,
+				3EA67D7A253EE8E300D63ACE /* GifyExt.swift */,
 				305D65BA1FC2C4AD00835685 /* AppProtocols.swift */,
 				E42F56511FE3B88F0042C4B1 /* GlobalVar.swift */,
 				E45C0D4420413F7A0036BD6B /* Constants.swift */,
@@ -429,9 +436,11 @@
 		3065B8B51F1716D000CBF37F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3ED4C4412548934A00752847 /* loader.gif */,
 				E4CAF13E21EC2682000E6B76 /* RemoteConfigDefaults.plist */,
 				30125EDC2010528000B62ECE /* ic_main_logo.png */,
 				30125EDD2010528000B62ECE /* ic_main_logo@2x.png */,
+				3ED4C449254B2A4800752847 /* Values.plist */,
 				30125EDE2010528000B62ECE /* ic_main_logo@3x.png */,
 				30DF8A041FF4BCB7009D9688 /* GoogleService-Infobkup.plist */,
 				E4874D4721DC54510020E33B /* GoogleService-Info.plist */,
@@ -728,6 +737,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED4C44A254B2A4800752847 /* Values.plist in Resources */,
 				3065B8A01F1710F900CBF37F /* LaunchScreen.storyboard in Resources */,
 				E47A637B1F176B5D008A3B16 /* bhatbhate.png in Resources */,
 				30D9A2A51F17257F00344674 /* MorePathway.storyboard in Resources */,
@@ -741,6 +751,7 @@
 				30738D591FB99DFF0010F5C0 /* PurchaseCreditPopup.xib in Resources */,
 				E4874D4821DC54510020E33B /* GoogleService-Info.plist in Resources */,
 				30DF8A051FF4BCB7009D9688 /* GoogleService-Infobkup.plist in Resources */,
+				3ED4C4422548934B00752847 /* loader.gif in Resources */,
 				E47D92EA20DB4EAA00AEB483 /* MarkerInfoView.xib in Resources */,
 				E4CAF13F21EC2682000E6B76 /* RemoteConfigDefaults.plist in Resources */,
 				30125EDF2010528000B62ECE /* ic_main_logo.png in Resources */,
@@ -942,6 +953,7 @@
 				E4FEDE931F1F378000BD5C79 /* CameraApertureViewController.swift in Sources */,
 				E42F56521FE3B88F0042C4B1 /* GlobalVar.swift in Sources */,
 				305D65B91FC2C36F00835685 /* ProfileViewPresenter.swift in Sources */,
+				3EA67D7B253EE8E300D63ACE /* GifyExt.swift in Sources */,
 				3065B8A91F17111400CBF37F /* CoreDataStack.swift in Sources */,
 				308AEF771F1CB887003B3FC2 /* BuyLandingViewPresenter.swift in Sources */,
 				E416109F1FCBFB3600FA3C4D /* RegistrationViewController.swift in Sources */,

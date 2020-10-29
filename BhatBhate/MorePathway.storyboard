@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wm-QI-BsQ">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wm-QI-BsQ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -130,14 +128,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JCZ-My-KkY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BuyListingCell" rowHeight="372" id="HqT-gz-xgb" customClass="BuyListingCell" customModule="BhatBhate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="372"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HqT-gz-xgb" id="MhD-cX-Vpf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="371.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="372"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="temp_image_bike" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-4f-5o5">
@@ -176,10 +174,10 @@
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F3d-48-wp1">
-                                                    <rect key="frame" x="15" y="298" width="345" height="60"/>
+                                                    <rect key="frame" x="15" y="298" width="345" height="66"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6A-zd-vYg" customClass="StarRatingView" customModule="BhatBhate" customModuleProvider="target">
-                                                            <rect key="frame" x="275" y="24" width="60" height="12"/>
+                                                            <rect key="frame" x="275" y="27" width="60" height="12"/>
                                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="X6A-zd-vYg" secondAttribute="height" multiplier="5:1" id="7OQ-mC-3dE"/>
@@ -187,7 +185,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal Enfield " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZmO-q2-1uv">
-                                                            <rect key="frame" x="10" y="10" width="188.5" height="40"/>
+                                                            <rect key="frame" x="10" y="10" width="188.5" height="46"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="WZF-ui-eHO"/>
                                                             </constraints>
@@ -196,7 +194,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38I-mq-7qg">
-                                                            <rect key="frame" x="208.5" y="22" width="58.5" height="16"/>
+                                                            <rect key="frame" x="208.5" y="25" width="58.5" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="58.5" id="HFK-pw-LlJ"/>
                                                             </constraints>
@@ -284,7 +282,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1R-jd-WYg">
-                                <rect key="frame" x="20" y="196.5" width="335" height="21"/>
+                                <rect key="frame" x="20" y="196" width="335" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -577,14 +575,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tvT-pB-euo">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionHistoryTableViewCell" rowHeight="109" id="Ryg-9H-KTh" customClass="TransactionHistoryTableViewCell" customModule="BhatBhate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ryg-9H-KTh" id="BxQ-u0-doH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-QR-vlE">
@@ -595,7 +593,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Credit Purchased from David" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-ht-pOZ">
-                                                    <rect key="frame" x="44" y="16" width="279.5" height="26.5"/>
+                                                    <rect key="frame" x="44" y="16" width="279.5" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -613,7 +611,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="No of credit consumed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-tF-9YZ">
-                                                    <rect key="frame" x="44" y="50.5" width="279.5" height="17"/>
+                                                    <rect key="frame" x="44" y="51" width="279.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -625,7 +623,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Voucher id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ch-lB-LdO">
-                                                    <rect key="frame" x="44" y="75.5" width="279.5" height="17"/>
+                                                    <rect key="frame" x="44" y="76" width="279.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -693,10 +691,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-bK-8vm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-Do-7Bi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="261"/>
                                         <subviews>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Xqv-x9-A4u">
                                                 <rect key="frame" x="140.5" y="40" width="94" height="94"/>
@@ -706,8 +704,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password, again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTZ-Ax-bzR">
-                                                <rect key="frame" x="20" y="149" width="335" height="50"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="20" y="161" width="335" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -719,11 +716,10 @@
                                                 </state>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqb-af-DvF">
-                                                <rect key="frame" x="20" y="83" width="335" height="50"/>
+                                                <rect key="frame" x="20" y="95" width="335" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="9dJ-E5-jgk"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -735,59 +731,59 @@
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svx-bk-ttd">
-                                                <rect key="frame" x="0.0" y="312" width="375" height="1"/>
+                                                <rect key="frame" x="0.0" y="324" width="375" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.66033976510000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="gng-mA-LOZ"/>
                                                 </constraints>
                                             </view>
                                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="diA-sq-BVY" customClass="LineInputField" customModule="BhatBhate" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="245" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="249" width="335" height="34"/>
                                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="OtQ-ul-Hui">
-                                                <rect key="frame" x="20" y="248" width="24" height="24"/>
+                                                <rect key="frame" x="20" y="254" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="ZKn-lz-JTT"/>
                                                     <constraint firstAttribute="width" constant="24" id="mnK-HF-72h"/>
                                                 </constraints>
                                             </imageView>
                                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVx-SU-yNO" customClass="LineInputField" customModule="BhatBhate" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="207" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="207" width="335" height="34"/>
                                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user" translatesAutoresizingMaskIntoConstraints="NO" id="Dv9-km-KcM">
-                                                <rect key="frame" x="20" y="210" width="24" height="24"/>
+                                                <rect key="frame" x="20" y="212" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="FMk-In-oqM"/>
                                                     <constraint firstAttribute="height" constant="24" id="Ncm-bc-0D2"/>
                                                 </constraints>
                                             </imageView>
                                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Muh-TI-D43" customClass="LineInputField" customModule="BhatBhate" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="283" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="291" width="335" height="34"/>
                                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone" translatesAutoresizingMaskIntoConstraints="NO" id="TcZ-n8-gbp">
-                                                <rect key="frame" x="20" y="286" width="24" height="24"/>
+                                                <rect key="frame" x="20" y="296" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="25c-4D-Cmp"/>
                                                     <constraint firstAttribute="height" constant="24" id="qtV-0S-TDi"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpd-yC-DxQ">
-                                                <rect key="frame" x="126" y="33" width="123" height="18"/>
+                                                <rect key="frame" x="126" y="45" width="123" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.3803921569" green="0.43529411759999997" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_edit_black" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-M5-vSa">
-                                                <rect key="frame" x="337" y="214" width="16" height="16"/>
+                                                <rect key="frame" x="337" y="216" width="16" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="CNw-jP-NUU"/>
                                                     <constraint firstAttribute="width" constant="16" id="Vtk-Lh-K1R"/>
@@ -885,7 +881,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="680-Py-xM5">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -902,11 +898,11 @@
         <image name="Avatar" width="60" height="60"/>
         <image name="ic_edit_black" width="15" height="15"/>
         <image name="ic_email" width="20" height="12"/>
-        <image name="ic_favourite_full" width="24" height="21"/>
-        <image name="ic_phone" width="20" height="34"/>
-        <image name="ic_tab_more" width="26" height="5"/>
-        <image name="ic_tab_more_selected" width="26" height="5"/>
-        <image name="ic_user" width="20" height="24"/>
-        <image name="temp_image_bike" width="286" height="186"/>
+        <image name="ic_favourite_full" width="24" height="21.5"/>
+        <image name="ic_phone" width="20" height="34.5"/>
+        <image name="ic_tab_more" width="26" height="5.5"/>
+        <image name="ic_tab_more_selected" width="26" height="5.5"/>
+        <image name="ic_user" width="20" height="24.5"/>
+        <image name="temp_image_bike" width="286.5" height="186.5"/>
     </resources>
 </document>

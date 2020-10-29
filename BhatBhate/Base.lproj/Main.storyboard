@@ -754,41 +754,64 @@
                         <viewControllerLayoutGuide type="top" id="Rtv-qV-m1F"/>
                         <viewControllerLayoutGuide type="bottom" id="bg6-1z-r14"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nBv-y1-Ffh">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c0B-QS-gQ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gharsanjal_logo" translatesAutoresizingMaskIntoConstraints="NO" id="46B-7u-NAc">
-                                <rect key="frame" x="147" y="93.5" width="80" height="313.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="46B-7u-NAc" secondAttribute="height" multiplier="343:338" id="Q9K-YM-nlW"/>
-                                </constraints>
+                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yC-TJ-vdH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-jH-TDs">
-                                <rect key="frame" x="183.5" y="588.5" width="8" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="PZx-5U-YjJ"/>
-                                    <constraint firstAttribute="width" constant="8" id="pGZ-3V-I59"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nepal's Biggest Bike Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdB-Vj-QFK">
-                                <rect key="frame" x="70" y="543" width="235" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gharsanjal_logo" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-q6-VCV">
+                                <rect key="frame" x="118" y="127" width="139" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GharSanjal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYz-OP-NxA">
+                                <rect key="frame" x="146" y="232" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gify" translatesAutoresizingMaskIntoConstraints="NO" id="xIg-Ny-yhE">
+                                <rect key="frame" x="86" y="283" width="203" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Powered By Cospirit.Inc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy1-Ne-um3">
+                                <rect key="frame" x="96.011764705882342" y="619" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.59215686270000001" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.03232" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-rJ-wiy">
+                                <rect key="frame" x="165.58823529411802" y="252" width="42.999999999999545" height="13.999999999999886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lowaba lowmba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-n6-HdR">
+                                <rect key="frame" x="165.58823529411802" y="447" width="43" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kdB-Vj-QFK" firstAttribute="centerX" secondItem="nBv-y1-Ffh" secondAttribute="centerX" id="1Jb-GE-b7D"/>
-                            <constraint firstItem="iQv-jH-TDs" firstAttribute="centerY" secondItem="nBv-y1-Ffh" secondAttribute="bottom" multiplier="0.92" id="1t8-pT-Boh"/>
-                            <constraint firstItem="46B-7u-NAc" firstAttribute="height" secondItem="nBv-y1-Ffh" secondAttribute="height" multiplier="0.47" id="DUM-W0-c2R"/>
-                            <constraint firstItem="kdB-Vj-QFK" firstAttribute="centerY" secondItem="nBv-y1-Ffh" secondAttribute="bottom" multiplier="0.83" id="FbS-KH-qXI"/>
-                            <constraint firstItem="46B-7u-NAc" firstAttribute="centerY" secondItem="nBv-y1-Ffh" secondAttribute="centerY" multiplier="0.75" id="SHO-AE-vCi"/>
-                            <constraint firstItem="iQv-jH-TDs" firstAttribute="centerX" secondItem="nBv-y1-Ffh" secondAttribute="centerX" id="YtN-FQ-ab6"/>
-                            <constraint firstItem="46B-7u-NAc" firstAttribute="centerX" secondItem="nBv-y1-Ffh" secondAttribute="centerX" id="rQK-9A-EJt"/>
+                            <constraint firstAttribute="bottom" secondItem="7yC-TJ-vdH" secondAttribute="bottom" id="ezy-ST-fye"/>
+                            <constraint firstItem="7yC-TJ-vdH" firstAttribute="leading" secondItem="c0B-QS-gQ4" secondAttribute="leading" id="jWz-T2-wDv"/>
+                            <constraint firstItem="7yC-TJ-vdH" firstAttribute="top" secondItem="c0B-QS-gQ4" secondAttribute="top" id="khB-XT-idm"/>
+                            <constraint firstAttribute="trailing" secondItem="7yC-TJ-vdH" secondAttribute="trailing" id="mlz-kN-VXH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loader_iv" destination="xIg-Ny-yhE" id="6m9-Cg-jZH"/>
+                        <outlet property="quote" destination="7bO-n6-HdR" id="gNv-ho-iM3"/>
+                        <outlet property="version" destination="L4Y-rJ-wiy" id="m4Z-2z-tYX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqL-6x-70k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -990,9 +1013,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="360" height="640"/>
         <image name="bhatbhate" width="250" height="38.5"/>
         <image name="flag" width="20" height="25.5"/>
         <image name="gharsanjal_logo" width="115" height="115"/>
+        <image name="gify" width="37" height="56"/>
         <image name="ic_create_account" width="36" height="29.5"/>
         <image name="ic_fb_logo" width="19" height="36"/>
         <image name="ic_forgot_password" width="27" height="36"/>

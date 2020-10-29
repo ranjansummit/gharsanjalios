@@ -15,20 +15,45 @@ class LaunchScreenViewController: UIViewController {
     @IBOutlet var countLabels: [UILabel]!
     @IBOutlet var horizontalLineView: UIView!
     
+    @IBOutlet weak var quote: UILabel!
     private var timer: Timer!
+    @IBOutlet weak var loader_iv: UIImageView!
     
+    @IBOutlet weak var version: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+   
+
+        var myEnglishArray: [String] = []
+        if let URL = Bundle.main.url(forResource: "Values", withExtension: "plist") {
+            if let englishFromPlist = NSArray(contentsOf: URL) as? [String] {
+                myEnglishArray = englishFromPlist
+
+              }
+            }
+        let randomInt = Int.random(in: 0..<myEnglishArray.count)
+        quote.text = myEnglishArray[randomInt]
+        
+         
         
         setupViews()
     }
 
     
+ 
 
-    
     func setupViews() {
         
         self.view.setGradientBackground(colorOne:AppTheme.Color.gradgreen , colorTwo: AppTheme.Color.gradyellow)
+        let jeremyGif = UIImage.gifImageWithName("loader")
+        loader_iv.image = jeremyGif
+        let versionval =  Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        version.text = "version: "+versionval!
+        version.sizeToFit()
+        quote.sizeToFit()
+        
+
         
 
         
