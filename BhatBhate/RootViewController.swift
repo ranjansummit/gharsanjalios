@@ -248,17 +248,17 @@ extension RootViewController {
                 return
             }
         
-            if buildFromServer > intNativeBuildNumber {
-                showYesNoAlert(title: "", message: "New version of app is available.", yesTitle: "Update Now.", noTitle: "I'll do it later."){
-                    answer in
-                    if answer {
-                        UIApplication.shared.openURL(URL(string: storeURL)!)
-                    }else{
-                        Defaults[.showVersionDialogue] = false
-                    }
-                }
-
-            }
+//        if buildFromServer > intNativeBuildNumber {
+//            showYesNoAlert(title: "", message: "New version of app is available.", yesTitle: "Update Now.", noTitle: "I'll do it later."){
+//                answer in
+//                if answer {
+//                    UIApplication.shared.openURL(URL(string: storeURL)!)
+//                }else{
+//                    Defaults[.showVersionDialogue] = false
+//                }
+//            }
+//            
+//        }
     }
     
     

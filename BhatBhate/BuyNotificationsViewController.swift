@@ -196,13 +196,13 @@ extension BuyNotificationsViewController: UITableViewDataSource, UITableViewDele
             if data.type == "sell_vehicle"{
                 let buyerName = data.buyerName ?? ""
                 cell.notificationDescriptionLabel.attributedText = notificationDescription.boldName(name: buyerName)
-                cell.labelNotificationType.text = "Sell"
+                cell.labelNotificationType.text = "Sale"
                  cell.notificationTitleLabel.text = "\(data.status.descriptionForSeller) "
             }else{
                 let sellerName = data.sellerName ?? ""
                 cell.notificationDescriptionLabel.attributedText = notificationDescription.boldName(name: sellerName)
                 cell.notificationTitleLabel.text = "\(data.status.description) \(data.vehicleName ?? "")"
-                cell.labelNotificationType.text = "Buy"
+                cell.labelNotificationType.text = "Home"
             }
             if data.type == "credit"{
                 var name:String!
@@ -261,7 +261,7 @@ extension BuyNotificationsViewController: UITableViewDataSource, UITableViewDele
             let name = data.buyerName ?? ""
             let description = data.description ?? ""
             cell.labelNotificationType.isHidden = false
-            cell.labelNotificationType.text = "Sell"
+            cell.labelNotificationType.text = "Sale"
             cell.bikeImageView.image = nil
             cell.creditAmountLabel.text = ""
             cell.bikeImageView.contentMode = .scaleAspectFill

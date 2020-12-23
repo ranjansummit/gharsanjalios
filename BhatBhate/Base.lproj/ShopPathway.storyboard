@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i7n-cJ-hUU">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i7n-cJ-hUU">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -279,27 +277,27 @@ or thousands of bikes.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLz-Cs-W5Q">
-                                <rect key="frame" x="20" y="40" width="335" height="1"/>
+                                <rect key="frame" x="20" y="39.5" width="335" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="OBh-0U-bkq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOo-pS-8IX">
-                                <rect key="frame" x="20" y="75" width="335" height="1"/>
+                                <rect key="frame" x="20" y="74.5" width="335" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="2VQ-OJ-dgV"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12Q-Cj-wfC">
-                                <rect key="frame" x="40" y="49" width="132.5" height="18"/>
+                                <rect key="frame" x="40" y="48.5" width="132.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mZ-bT-ZQe">
-                                <rect key="frame" x="300.5" y="49" width="34.5" height="18"/>
+                                <rect key="frame" x="300.5" y="48.5" width="34.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -545,7 +543,7 @@ or thousands of bikes.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="at RS 500 (each credit) from" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nom-hg-h8E">
-                                <rect key="frame" x="20" y="40" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="30" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0039215686274509803" green="0.1764705882352941" blue="0.42352941176470588" alpha="0.59854760906040272" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -864,7 +862,7 @@ or thousands of bikes.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use your phone camera to scan the QR code and pay the seller on confirmation of code transfer. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="BIW-CS-tgA">
-                                <rect key="frame" x="40" y="24" width="295" height="70"/>
+                                <rect key="frame" x="40" y="4" width="295" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="wcG-aX-Mhi"/>
                                 </constraints>
@@ -873,16 +871,16 @@ or thousands of bikes.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5X-96-Yoi">
-                                <rect key="frame" x="20" y="98" width="335" height="433.5"/>
+                                <rect key="frame" x="20" y="78" width="335" height="433.5"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hc-fx-h3w">
-                                <rect key="frame" x="176.5" y="536.5" width="22" height="18"/>
+                                <rect key="frame" x="176.5" y="516.5" width="22" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" red="0.3803921569" green="0.43529411759999997" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="964-9I-cSI">
-                                <rect key="frame" x="36" y="559.5" width="303" height="50"/>
+                                <rect key="frame" x="36" y="539.5" width="303" height="50"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.1764705882" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UP7-QA-kj3"/>
@@ -933,25 +931,25 @@ or thousands of bikes.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_transfer_credit_image" translatesAutoresizingMaskIntoConstraints="NO" id="0ZY-oW-B0c">
-                                <rect key="frame" x="112.5" y="30" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="10" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0ZY-oW-B0c" secondAttribute="height" multiplier="1:1" id="4mg-Ek-gyR"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell your credits easily!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-xE-DRg">
-                                <rect key="frame" x="20" y="200" width="335" height="19.5"/>
+                                <rect key="frame" x="20" y="180" width="335" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-XW-s92">
-                                <rect key="frame" x="53.5" y="368.5" width="104" height="18"/>
+                                <rect key="frame" x="53.5" y="348.5" width="104" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-rL-Q3o">
-                                <rect key="frame" x="177.5" y="351" width="150" height="53.5"/>
+                                <rect key="frame" x="177.5" y="331" width="150" height="53.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tP8-QU-0aC">
                                         <rect key="frame" x="96.5" y="0.0" width="53.5" height="53.5"/>
@@ -1035,31 +1033,31 @@ or thousands of bikes.</string>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Enter the amount of credits to sell;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-G3-ZoR">
-                                <rect key="frame" x="32" y="239.5" width="323" height="19.5"/>
+                                <rect key="frame" x="32" y="219.5" width="323" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Generate QR Code;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-N0-rfy">
-                                <rect key="frame" x="32" y="265" width="323" height="19.5"/>
+                                <rect key="frame" x="32" y="245" width="323" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Ask buyer to scan your QR code" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-iV-9nw" userLabel="3. Ask buyer to scan your QR code or, enter the code manually;">
-                                <rect key="frame" x="32" y="290.5" width="323" height="19.5"/>
+                                <rect key="frame" x="32" y="270.5" width="323" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are transferring xx credit at Rs. 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j0-oZ-fX8">
-                                <rect key="frame" x="67" y="416.5" width="241" height="16"/>
+                                <rect key="frame" x="67" y="396.5" width="241" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.43529411764705883" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, enter the code manually; " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-JX-gLl">
-                                <rect key="frame" x="52" y="316" width="222.5" height="20"/>
+                                <rect key="frame" x="52" y="296" width="222.5" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.3803921569" green="0.43529411759999997" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1467,7 +1465,6 @@ or thousands of bikes.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="M3h-XR-2I0"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1570,13 +1567,13 @@ or thousands of bikes.</string>
         <scene sceneID="yiy-7u-WId">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController-i7n-cJ-hUU" automaticallyAdjustsScrollViewInsets="NO" id="i7n-cJ-hUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_tab_shop" selectedImage="ic_tab_shop_selected" id="ixN-hl-AAu">
+                    <tabBarItem key="tabBarItem" title="" image="searches" selectedImage="searches" id="ixN-hl-AAu">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Vf-2y-qLd">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1597,25 +1594,25 @@ or thousands of bikes.</string>
                         <viewControllerLayoutGuide type="bottom" id="Eht-2Z-80m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Odv-mv-ZbQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uw-wJ-YV1">
-                                <rect key="frame" x="187.5" y="156.5" width="0.0" height="60.5"/>
+                                <rect key="frame" x="187.5" y="152" width="0.0" height="58.5"/>
                                 <color key="backgroundColor" red="0.85882352939999995" green="0.019607843140000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="jsZ-WT-aK8"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-tk-zNx">
-                                <rect key="frame" x="259.5" y="156.5" width="60" height="60.5"/>
+                                <rect key="frame" x="257.5" y="152" width="58.5" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0039215686269999999" green="0.1764705882" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arn-qR-QCl">
-                                <rect key="frame" x="191.5" y="156.5" width="60" height="60.5"/>
+                                <rect key="frame" x="191.5" y="152" width="58" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="arn-qR-QCl" secondAttribute="height" multiplier="1:1" id="jdP-N6-M5J"/>
@@ -1625,7 +1622,7 @@ or thousands of bikes.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaC-dM-s0p">
-                                <rect key="frame" x="123.5" y="156.5" width="60" height="60.5"/>
+                                <rect key="frame" x="125.5" y="152" width="58" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iaC-dM-s0p" secondAttribute="height" multiplier="1:1" id="86h-n5-jeQ"/>
@@ -1635,14 +1632,14 @@ or thousands of bikes.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-Cy-p89">
-                                <rect key="frame" x="55.5" y="156.5" width="60" height="60.5"/>
+                                <rect key="frame" x="59" y="152" width="58.5" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0039215686269999999" green="0.1764705882" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hg-Q4-V7u">
-                                <rect key="frame" x="30" y="295" width="315" height="50"/>
+                                <rect key="frame" x="30" y="285.5" width="315" height="50"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.1764705882" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8y1-7B-nKb"/>
@@ -1655,7 +1652,7 @@ or thousands of bikes.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the case sensitive code shown by seller below and pay the seller on confirmation of code transfer. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-UI-3Fc">
-                                <rect key="frame" x="20" y="6.5" width="335" height="120"/>
+                                <rect key="frame" x="20" y="4.5" width="335" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="dJi-Be-v2x"/>
                                 </constraints>
@@ -1709,14 +1706,13 @@ or thousands of bikes.</string>
     <resources>
         <image name="ic_credit_large" width="250" height="249"/>
         <image name="ic_email" width="20" height="12"/>
-        <image name="ic_minus" width="30" height="4"/>
-        <image name="ic_phone" width="20" height="34"/>
+        <image name="ic_minus" width="30" height="4.5"/>
+        <image name="ic_phone" width="20" height="34.5"/>
         <image name="ic_plus" width="30" height="32"/>
         <image name="ic_qr_code" width="33" height="34"/>
         <image name="ic_sell_credit_label" width="33" height="31"/>
         <image name="ic_swipe_cross" width="25" height="25"/>
-        <image name="ic_tab_shop" width="58" height="13"/>
-        <image name="ic_tab_shop_selected" width="58" height="13"/>
-        <image name="ic_transfer_credit_image" width="200" height="284"/>
+        <image name="ic_transfer_credit_image" width="200" height="284.5"/>
+        <image name="searches" width="40" height="38"/>
     </resources>
 </document>

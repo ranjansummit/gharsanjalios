@@ -14,10 +14,11 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.backgroundColor = AppTheme.Color.primaryBlue
-        self.tabBar.isTranslucent = false
-        self.tabBar.tintColor = AppTheme.Color.primaryRed
-        self.tabBar.barTintColor = AppTheme.Color.primaryBlue
+   //        self.tabBar.backgroundColor = AppTheme.Color.appbargreen
+                self.tabBar.isTranslucent = false
+                self.tabBar.tintColor = AppTheme.Color.primaryRed
+                self.tabBar.barTintColor = AppTheme.Color.appbargreen
+        //        self.tabBar.backgroundImage = UIImage()
         self.tabBar.backgroundImage = UIImage()
     
     }
@@ -81,15 +82,15 @@ class TabBarViewController: UITabBarController {
         
         // iterate through the items in the Tab Bar, except the last one
         for i in 0...(self.tabBar.items!.count - 1) {
-          //  print("count=\(i)")
+            //  print("count=\(i)")
             itemWidth = i == 2 ? itemWidth + 4.0 : itemWidth
-                        // make a new separator at the end of each tab bar item
-             separator = UIView(frame: CGRect(x: itemWidth * CGFloat(i + 1) - CGFloat(separatorWidth / 2), y: 0, width: CGFloat(separatorWidth), height: self.tabBar.frame.size.height))
+            // make a new separator at the end of each tab bar item
+            separator = UIView(frame: CGRect(x: itemWidth * CGFloat(i + 1) - CGFloat(separatorWidth / 2), y: 0, width: CGFloat(separatorWidth), height: self.tabBar.frame.size.height))
             separator.tag = i + 100
             // set the color to light gray (default line color for tab bar)
             separator.backgroundColor = i == 3 ? UIColor.clear : UIColor.from(r: 224, g: 228, b: 241, a: 0.3)
-                self.tabBar.addSubview(separator)
-
+            self.tabBar.addSubview(separator)
+            
         }
     }
     
@@ -102,7 +103,7 @@ class TabBarViewController: UITabBarController {
             self.present(navVC, animated: true, completion: nil)
         }
     }
-
+    
     private func setupTabImages() {
         
         
@@ -126,7 +127,7 @@ class TabBarViewController: UITabBarController {
             return
         }
         ApiManager.sendRequest(toApi: .getCredit, onSuccess: {status , response in
-           // print("in tabbarviewcontroller")
+            // print("in tabbarviewcontroller")
             if status == 200 {
                 if let promotionMode = response["promotion_mode"].int{
                     Defaults[.promotionMode] = promotionMode == 1
@@ -142,7 +143,7 @@ class TabBarViewController: UITabBarController {
                         tabItem?.badgeValue = nil
                     }else{
                         tabItem?.isEnabled = true
-                    tabItem?.badgeValue = "\(credit)"
+                        tabItem?.badgeValue = "\(credit)"
                         let strCredit = credit == 0 ? nil : "\(credit)"
                     self.tabBar.items?[2].badgeValue = strCredit
                     }

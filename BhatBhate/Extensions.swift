@@ -16,7 +16,7 @@ extension UIStoryboard {
     }
     
     class var buyPathway:UIStoryboard {
-        return UIStoryboard(name: "BuyPathway", bundle: nil)
+        return UIStoryboard(name: "HomePathway", bundle: nil)
     }
     
     class var sellPathway:UIStoryboard {

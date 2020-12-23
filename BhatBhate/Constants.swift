@@ -13,16 +13,16 @@ struct Constants {
     
     static let schemeDevelopment = false // true for uat false for production
     
-    static let clientId = 1
+    static let clientId = 4
    
     static let webSocketURL = WebSocket(url: URL(string: "ws://staging.andmine.com:7979/")!)
     
     static var clientSecret:String{
-        return schemeDevelopment ? "JzSUAyr1T6hy43x9X3InoEyMVrxnbryWlRKAP7CV" : "W8ZZci58qPeERpaIKyA38GDesnpTnXXxrNxxnIL2"
+        return schemeDevelopment ? "nRkBLbkTtNTZIUx8PQDzAawhJ2ZgZ45th6BIyp6D" : "nRkBLbkTtNTZIUx8PQDzAawhJ2ZgZ45th6BIyp6D"
     }
      
     static var esewaRedirectURL:String{
-        return schemeDevelopment ? "http://uat.bhatbhate.net/api/v1/esewa/redirect" : "http://bhatbhate.net/api/v1/esewa/redirect"
+        return schemeDevelopment ? "http://gharsanjal.com/api/v1/esewa/redirect" : "http://gharsanjal.com/api/v1/esewa/redirect"
     }
     
 //    struct Esewa {

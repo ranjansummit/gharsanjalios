@@ -25,7 +25,7 @@ struct Api  {
     
     
     static var BASE_URL:String{
-        return Constants.schemeDevelopment ? "http://uat.bhatbhate.net" : "http://bhatbhate.net"
+        return Constants.schemeDevelopment ? "http://gharsanjal.com" : "http://gharsanjal.com"
     }
     
     enum Endpoint {

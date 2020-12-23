@@ -874,7 +874,7 @@
         <scene sceneID="79I-4E-zEr">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController-0wm-QI-BsQ" automaticallyAdjustsScrollViewInsets="NO" id="0wm-QI-BsQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_tab_more" selectedImage="ic_tab_more_selected" id="ern-Ix-dC3">
+                    <tabBarItem key="tabBarItem" title="" image="menu" selectedImage="menu" id="ern-Ix-dC3">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -900,9 +900,8 @@
         <image name="ic_email" width="20" height="12"/>
         <image name="ic_favourite_full" width="24" height="21.5"/>
         <image name="ic_phone" width="20" height="34.5"/>
-        <image name="ic_tab_more" width="26" height="5.5"/>
-        <image name="ic_tab_more_selected" width="26" height="5.5"/>
         <image name="ic_user" width="20" height="24.5"/>
+        <image name="menu" width="40" height="38"/>
         <image name="temp_image_bike" width="286.5" height="186.5"/>
     </resources>
 </document>
