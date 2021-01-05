@@ -41,14 +41,14 @@ class ProfileViewController: RootViewController, ProfileViewPresentation, EditPr
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if Defaults[.promotionMode]{
-            if !Defaults[.preview] {
-            self.tabBarController?.tabBar.items?[2].isEnabled = false
-            self.tabBarController?.tabBar.items?[2].badgeValue = nil
-            }
-        }else{
-            self.tabBarController?.tabBar.items?[2].isEnabled = true
-        }
+//        if Defaults[.promotionMode]{
+//            if !Defaults[.preview] {
+//            self.tabBarController?.tabBar.items?[2].isEnabled = false
+//            self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//            }
+//        }else{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = true
+//        }
     }
     
     func setupViews() {
@@ -98,7 +98,7 @@ class ProfileViewController: RootViewController, ProfileViewPresentation, EditPr
             if Defaults[.promotionMode]{
                 if !Defaults[.preview]{
                 self.tabBarController?.tabBar.items?[2].isEnabled = false
-                self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//                self.tabBarController?.tabBar.items?[2].badgeValue = nil
                 }
             }else{
                 self.tabBarController?.tabBar.items?[2].isEnabled = true

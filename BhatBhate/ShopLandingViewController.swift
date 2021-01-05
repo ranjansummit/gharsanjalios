@@ -206,7 +206,7 @@ class ShopLandingViewController: RootViewController, UITextFieldDelegate {
                             if let result = response["data"].dictionary{
                                 let availableCredit = result["available_credit"]?.int ?? Defaults[.userCreditCount]
                                 Defaults[.userCreditCount] = availableCredit
-                                self.tabBarController?.tabBar.items?[2].badgeValue = "\(availableCredit)"
+//                                self.tabBarController?.tabBar.items?[2].badgeValue = "\(availableCredit)"
                                 let message = result["message"]?.string ?? "Congratulations, you have got one credit."
                                 self.showAlert(title: "", message: message)
                             }
@@ -315,15 +315,15 @@ class ShopLandingViewController: RootViewController, UITextFieldDelegate {
             }
             if let promotionMode = response["data"]["promotion_mode"].int{
                 Defaults[.promotionMode] = promotionMode == 1
-                if let tabItem = self?.tabBarController?.tabBar.items?[2] {
-                    //                    tabItem.isEnabled = promotionMode == 0
-                    if promotionMode == 1 {
-                        tabItem.isEnabled = false
-                        tabItem.badgeValue = nil
-                    }else{
-                        tabItem.isEnabled = true
-                    }
-                }
+//                if let tabItem = self?.tabBarController?.tabBar.items?[2] {
+//                    //                    tabItem.isEnabled = promotionMode == 0
+//                    if promotionMode == 1 {
+//                        tabItem.isEnabled = true
+//                        tabItem.badgeValue = nil
+//                    }else{
+//                        tabItem.isEnabled = true
+//                    }
+//                }
             }
             if let vehiclesCount = response["data"]["vehicles_count"].int{
                 Defaults[.bikeCount] = vehiclesCount
@@ -373,7 +373,7 @@ class ShopLandingViewController: RootViewController, UITextFieldDelegate {
                     self?.creditCountDescLabel.text = "You have (\(credit)) credit\(credit<2 ? "":"s")"
                     let tabArray = self?.tabBarController?.tabBar.items
                     let tabItem = tabArray?[2]
-                    tabItem?.badgeValue = "\(credit)"
+//                    tabItem?.badgeValue = "\(credit)"
                 }
             }
             

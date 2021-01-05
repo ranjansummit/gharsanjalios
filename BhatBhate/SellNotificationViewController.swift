@@ -315,7 +315,7 @@ extension SellNotificationViewController: UITableViewDataSource, UITableViewDele
                     Defaults[.userCreditCount] = credit
                     let tabArray = self.tabBarController?.tabBar.items
                     let tabItem = tabArray?[2]
-                    tabItem?.badgeValue = "\(credit)"
+//                    tabItem?.badgeValue = "\(credit)"
                     
                 }
             }

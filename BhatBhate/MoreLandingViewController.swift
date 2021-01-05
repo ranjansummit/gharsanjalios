@@ -70,7 +70,7 @@ class MoreLandingViewController: RootViewController {
         labelWishlistCount.isHidden = Defaults[.myWishlistCount] == 0
         labelWishlistCount.text = Defaults[.myWishlistCount].description
         if  Defaults[.accessToken] == nil {
-            self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//            self.tabBarController?.tabBar.items?[2].badgeValue = nil
         }
         getAppSetting()
         updateNotifBadge()
@@ -120,15 +120,15 @@ class MoreLandingViewController: RootViewController {
             
             if let promotionMode = response["data"]["promotion_mode"].int{
                    Defaults[.promotionMode] = promotionMode == 1
-                if promotionMode == 1{
-                    if !Defaults[.preview]{
-                    self.tabBarController?.tabBar.items?[2].isEnabled = false
-                    self.tabBarController?.tabBar.items?[2].badgeValue = nil
-                    }
-                    
-                }else{
-                    self.tabBarController?.tabBar.items?[2].isEnabled = true
-                }
+//                if promotionMode == 1{
+//                    if !Defaults[.preview]{
+//                    self.tabBarController?.tabBar.items?[2].isEnabled = false
+//                    self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//                    }
+//                    
+//                }else{
+//                    self.tabBarController?.tabBar.items?[2].isEnabled = true
+//                }
             }
             
             if let vehiclesCount = response["data"]["vehicles_count"].int{

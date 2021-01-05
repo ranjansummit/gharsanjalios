@@ -147,23 +147,23 @@ class BuyLandingViewController: RootViewController, BuyLandingViewPresentation, 
             Defaults[.reloadBuyListing] = false
         }
         
-        if Defaults[.promotionMode]{
-            if Defaults[.preview]{
-                var tbViewControllers = self.tabBarController?.viewControllers
-                //                print("number of tabs=", tbViewControllers?.count)
-                //                print("tab name at 2 =" ,self.tabBarController?.tabBar.items?[0].title)
-                if tbViewControllers?.count == 4 {
-                    tbViewControllers?.remove(at: 2)
-                    self.tabBarController?.setViewControllers(tbViewControllers, animated: false)
-                }
-                return
-            }
-            self.tabBarController?.tabBar.items?[2].isEnabled = false
-            self.tabBarController?.tabBar.items?[2].badgeValue = nil
-        }else{
-            self.tabBarController?.tabBar.items?[2].isEnabled = true
-        }
-        
+//        if Defaults[.promotionMode]{
+//            if Defaults[.preview]{
+//                var tbViewControllers = self.tabBarController?.viewControllers
+//                //                print("number of tabs=", tbViewControllers?.count)
+//                //                print("tab name at 2 =" ,self.tabBarController?.tabBar.items?[0].title)
+//                if tbViewControllers?.count == 4 {
+//                    tbViewControllers?.remove(at: 2)
+//                    self.tabBarController?.setViewControllers(tbViewControllers, animated: false)
+//                }
+//                return
+//            }
+//            self.tabBarController?.tabBar.items?[2].isEnabled = false
+//            self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//        }else{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = true
+//        }
+//
         self.myNotificationCount = Defaults[.myNotificationCount]
         updateNotifBadge()
         self.favCount = Defaults[.myWishlistCount]
@@ -261,7 +261,7 @@ class BuyLandingViewController: RootViewController, BuyLandingViewPresentation, 
                 }
             }else{
                 self.tabBarController?.tabBar.items?[2].isEnabled = false
-                self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//                self.tabBarController?.tabBar.items?[2].badgeValue = nil
             }
         }else{
             self.tabBarController?.tabBar.items?[2].isEnabled = true
@@ -420,12 +420,12 @@ class BuyLandingViewController: RootViewController, BuyLandingViewPresentation, 
                 Defaults[.promotionMode] = promotionMode == 1
                 if let tabItem = self?.tabBarController?.tabBar.items?[2] {
                     //                    tabItem.isEnabled = promotionMode == 0
-                    if promotionMode == 1 {
-                        tabItem.isEnabled = false
-                        tabItem.badgeValue = nil
-                    }else{
-                        tabItem.isEnabled = true
-                    }
+//                    if promotionMode == 1 {
+//                        tabItem.isEnabled = true
+//                        tabItem.badgeValue = nil
+//                    }else{
+//                        tabItem.isEnabled = true
+//                    }
                 }
             }
             if let vehiclesCount = response["data"]["vehicles_count"].int{

@@ -16,8 +16,12 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
    //        self.tabBar.backgroundColor = AppTheme.Color.appbargreen
                 self.tabBar.isTranslucent = false
-                self.tabBar.tintColor = AppTheme.Color.primaryRed
+                self.tabBar.tintColor = AppTheme.Color.tabselectyellow
                 self.tabBar.barTintColor = AppTheme.Color.appbargreen
+        if #available(iOS 10.0, *) {
+            self.tabBar.unselectedItemTintColor = AppTheme.Color.white
+        } else {
+        }
         //        self.tabBar.backgroundImage = UIImage()
         self.tabBar.backgroundImage = UIImage()
     
@@ -31,7 +35,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLayoutSubviews()
         checkEmailAndMobile()
         //separator.removeFromSuperview()
-        setupTabBarSeparators()
+//        setupTabBarSeparators()
      print("in viewdid layout subviews")
     }
     
@@ -40,15 +44,15 @@ class TabBarViewController: UITabBarController {
         if (Defaults[.preview]){
             return
         }
-        let tabItem = self.tabBar.items?[2]
-        if Defaults[.promotionMode] {
-            tabItem?.isEnabled = false
-            tabItem?.badgeValue = nil
-        }else{
-            tabItem?.isEnabled = true
-            let credit = Defaults[.userCreditCount] == 0 ? nil : "\(Defaults[.userCreditCount])"
-            tabItem?.badgeValue = credit
-        }
+//        let tabItem = self.tabBar.items?[2]
+//        if Defaults[.promotionMode] {
+//            tabItem?.isEnabled = true
+//            tabItem?.badgeValue = nil
+//        }else{
+//            tabItem?.isEnabled = true
+//            let credit = Defaults[.userCreditCount] == 0 ? nil : "\(Defaults[.userCreditCount])"
+//            tabItem?.badgeValue = credit
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -137,16 +141,16 @@ class TabBarViewController: UITabBarController {
                     Defaults[.callGetCreditInShop] = false
                     Defaults[.userCreditCount] = credit
                     let tabArray = self.tabBarController?.tabBar.items
-                    let tabItem = tabArray?[2]
-                    if Defaults[.promotionMode]{
-                        tabItem?.isEnabled = false
-                        tabItem?.badgeValue = nil
-                    }else{
-                        tabItem?.isEnabled = true
-                        tabItem?.badgeValue = "\(credit)"
-                        let strCredit = credit == 0 ? nil : "\(credit)"
-                    self.tabBar.items?[2].badgeValue = strCredit
-                    }
+//                    let tabItem = tabArray?[2]
+//                    if Defaults[.promotionMode]{
+//                        tabItem?.isEnabled = true
+////                        tabItem?.badgeValue = nil
+//                    }else{
+//                        tabItem?.isEnabled = true
+//                        tabItem?.badgeValue = "\(credit)"
+//                        let strCredit = credit == 0 ? nil : "\(credit)"
+//                    self.tabBar.items?[2].badgeValue = strCredit
+//                    }
                 }
             }
             

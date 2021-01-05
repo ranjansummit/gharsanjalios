@@ -127,14 +127,14 @@ class AddPhotosViewController: RootViewController {
             self.navigationController?.popToRootViewController(animated: true)
             return
         }
-        if Defaults[.promotionMode]{
-            if !Defaults[.preview]{
-            self.tabBarController?.tabBar.items?[2].isEnabled = false
-            self.tabBarController?.tabBar.items?[2].badgeValue = nil
-            }
-        }else{
-            self.tabBarController?.tabBar.items?[2].isEnabled = true
-        }
+//        if Defaults[.promotionMode]{
+//            if !Defaults[.preview]{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = false
+//            self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//            }
+//        }else{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = true
+//        }
     }
 
     func presentCameraSettings() {

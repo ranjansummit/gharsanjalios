@@ -284,7 +284,7 @@ class SellLandingViewController: RootViewController, PushNotificationBadgePresen
     
     @objc func updateBadge(notification:Notification){
         //  print("updating badge ***********")
-        self.tabBarController?.tabBar.items?[2].badgeValue = "\(Defaults[.userCreditCount])"
+//        self.tabBarController?.tabBar.items?[2].badgeValue = "\(Defaults[.userCreditCount])"
         let creditCount = Defaults[.userCreditCount]
         let stringCredit = creditCount > 1 ? "credits" : "credit"
         labelCreditRemaining.text = "(\(creditCount) \(stringCredit) remaining)"
@@ -320,15 +320,15 @@ class SellLandingViewController: RootViewController, PushNotificationBadgePresen
                 let promotionMode = response["promotion_mode"].int ?? 0
                 Defaults[.promotionMode] = promotionMode == 1
                 
-                if promotionMode == 1 {
-                    if !Defaults[.preview]{
-                        self.tabBarController?.tabBar.items?[2].isEnabled = false
-                        self.tabBarController?.tabBar.items?[2].badgeValue = nil
-                    }
-                    
-                }else{
-                    self.tabBarController?.tabBar.items?[2].isEnabled = true
-                }
+//                if promotionMode == 1 {
+//                    if !Defaults[.preview]{
+//                        self.tabBarController?.tabBar.items?[2].isEnabled = false
+//                        self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//                    }
+//                    
+//                }else{
+//                    self.tabBarController?.tabBar.items?[2].isEnabled = true
+//                }
                 
                 let normalCredit = response["normal_credit"].int ?? 500
                 Defaults[.normalCredit] = normalCredit
@@ -400,8 +400,8 @@ class SellLandingViewController: RootViewController, PushNotificationBadgePresen
                 if let tabItem = self?.tabBarController?.tabBar.items?[2] {
                     //                    tabItem.isEnabled = promotionMode == 0
                     if promotionMode == 1 {
-                        tabItem.isEnabled = false
-                        tabItem.badgeValue = nil
+                        tabItem.isEnabled = true
+//                        tabItem.badgeValue = nil
                     }else{
                         tabItem.isEnabled = true
                     }
@@ -463,9 +463,9 @@ extension SellLandingViewController: UITableViewDataSource, UITableViewDelegate{
                     if let remainingCredit = response["data"]["remaining_credit"].int{
                         Defaults[.userPublishedBikeCount] = response["data"]["listing_vehicle"].int!
                         Defaults[.userCreditCount] = remainingCredit
-                        if !Defaults[.preview]{
-                            self.tabBarController?.tabBar.items?[2].badgeValue = "\(remainingCredit)"
-                        }
+//                        if !Defaults[.preview]{
+//                            self.tabBarController?.tabBar.items?[2].badgeValue = "\(remainingCredit)"
+//                        }
                         let creditCount = Defaults[.userCreditCount]
                         let stringCredit = creditCount > 1 ? "credits" : "credit"
                         self.labelCreditRemaining.text = "(\(creditCount) \(stringCredit) remaining)"

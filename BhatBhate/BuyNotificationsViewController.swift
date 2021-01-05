@@ -71,18 +71,18 @@ class BuyNotificationsViewController: RootViewController, BuyNotificationViewPre
     
     func displayNotificationList() {
          
-        if Defaults[.promotionMode]{
-            if !Defaults[.preview]{
-            self.tabBarController?.tabBar.items?[2].isEnabled = false
-            self.tabBarController?.tabBar.items?[2].badgeValue = nil
-            }else{
-                if segmentControl.numberOfSegments == 4 {
-                segmentControl.removeSegment(at: 3, animated: false)
-                }
-            }
-        }else{
-            self.tabBarController?.tabBar.items?[2].isEnabled = true
-        }
+//        if Defaults[.promotionMode]{
+//            if !Defaults[.preview]{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = false
+//            self.tabBarController?.tabBar.items?[2].badgeValue = nil
+//            }else{
+//                if segmentControl.numberOfSegments == 4 {
+//                segmentControl.removeSegment(at: 3, animated: false)
+//                }
+//            }
+//        }else{
+//            self.tabBarController?.tabBar.items?[2].isEnabled = true
+//        }
         tableView.hideMessageLabel(embeddedLabel: messageLabel)
         tableView.dataSource = self
         tableView.delegate = self

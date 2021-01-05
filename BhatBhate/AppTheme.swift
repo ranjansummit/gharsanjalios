@@ -25,7 +25,9 @@ struct AppTheme {
         static let textBlue = UIColor.from(r: 97, g: 111, b: 155, a: 1.0) //#616F9B
           static let appbargreen = UIColor.from(r: 0, g: 151, b: 61, a: 1.0) //#616F9B
         
+                static let tabselectyellow = UIColor.from(r: 227, g: 248, b: 5, a: 1.0)
         
+//               static let white = UIColor.from(r: 255, g: 255, b: 255, a: 1.0)
         static let white = UIColor.white
         static let black = UIColor.black
     }
