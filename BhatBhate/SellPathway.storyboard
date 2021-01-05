@@ -758,7 +758,7 @@
         <scene sceneID="A0f-ga-Wo2">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController-i3X-va-WUY" automaticallyAdjustsScrollViewInsets="NO" id="i3X-va-WUY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="add" selectedImage="add" id="56b-BT-FSX">
+                    <tabBarItem key="tabBarItem" title="" image="ic_add" selectedImage="ic_add" id="56b-BT-FSX">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1207,8 +1207,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="40" height="38"/>
         <image name="camera" width="32" height="32"/>
+        <image name="ic_add" width="26.5" height="19"/>
         <image name="ic_credit_large" width="250" height="249"/>
         <image name="ic_favourite_full" width="24" height="21.5"/>
         <image name="image_bike" width="256" height="256"/>

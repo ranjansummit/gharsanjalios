@@ -1567,7 +1567,7 @@ or thousands of bikes.</string>
         <scene sceneID="yiy-7u-WId">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController-i7n-cJ-hUU" automaticallyAdjustsScrollViewInsets="NO" id="i7n-cJ-hUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="searches" selectedImage="searches" id="ixN-hl-AAu">
+                    <tabBarItem key="tabBarItem" title="" image="ic_searches" selectedImage="ic_searches" id="ixN-hl-AAu">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1710,9 +1710,9 @@ or thousands of bikes.</string>
         <image name="ic_phone" width="20" height="34.5"/>
         <image name="ic_plus" width="30" height="32"/>
         <image name="ic_qr_code" width="33" height="34"/>
+        <image name="ic_searches" width="20.5" height="20.5"/>
         <image name="ic_sell_credit_label" width="33" height="31"/>
         <image name="ic_swipe_cross" width="25" height="25"/>
         <image name="ic_transfer_credit_image" width="200" height="284.5"/>
-        <image name="searches" width="40" height="38"/>
     </resources>
 </document>

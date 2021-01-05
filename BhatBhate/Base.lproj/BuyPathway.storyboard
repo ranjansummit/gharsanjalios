@@ -1166,7 +1166,7 @@
         <scene sceneID="1R4-th-Ekt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Hf-kO-n9Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="  " image="home" selectedImage="home" id="dJQ-Ea-UMb">
+                    <tabBarItem key="tabBarItem" title="  " image="ic_home" selectedImage="ic_home" id="dJQ-Ea-UMb">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1649,11 +1649,11 @@ Important: Bikes are not editable after publishing.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="40" height="38"/>
         <image name="ic_edit_black" width="15" height="15"/>
         <image name="ic_email" width="20" height="12"/>
         <image name="ic_favourite_empty" width="24" height="21.5"/>
         <image name="ic_favourite_full" width="24" height="21.5"/>
+        <image name="ic_home" width="18.5" height="20"/>
         <image name="ic_nav_back" width="23" height="20"/>
         <image name="ic_phone" width="20" height="34.5"/>
         <image name="ic_unchecked" width="24" height="24"/>
