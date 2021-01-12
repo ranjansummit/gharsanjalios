@@ -10,7 +10,7 @@
         <!--Sell Landing View Controller-->
         <scene sceneID="vvC-Lv-s9Z">
             <objects>
-                <viewController storyboardIdentifier="SellLandingViewController" automaticallyAdjustsScrollViewInsets="NO" id="vHK-62-vL8" customClass="SellLandingViewController" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellLandingViewController" automaticallyAdjustsScrollViewInsets="NO" id="vHK-62-vL8" customClass="SellLandingViewController" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hzy-Qg-TRb"/>
                         <viewControllerLayoutGuide type="bottom" id="3pf-oC-n97"/>
@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="441" width="375" height="472.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellLanding" rowHeight="405" id="Ocp-io-Pmg" customClass="SellLandingTableViewCell" customModule="BhatBhate" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellLanding" rowHeight="405" id="Ocp-io-Pmg" customClass="SellLandingTableViewCell" customModule="GharSanjal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="405"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ocp-io-Pmg" id="shJ-HX-Tzw">
@@ -186,7 +186,7 @@
                                                             <color key="textColor" red="0.10980392160000001" green="0.1529411765" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-6f-kVu" customClass="StarRatingView" customModule="BhatBhate" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-6f-kVu" customClass="StarRatingView" customModule="GharSanjal" customModuleProvider="target">
                                                             <rect key="frame" x="275" y="16.5" width="60" height="12"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -336,7 +336,7 @@
         <!--Sell Information View Controller One-->
         <scene sceneID="eqr-u6-sTX">
             <objects>
-                <viewController storyboardIdentifier="SellInformationViewControllerOne" automaticallyAdjustsScrollViewInsets="NO" id="jhH-OH-tEJ" customClass="SellInformationViewControllerOne" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellInformationViewControllerOne" automaticallyAdjustsScrollViewInsets="NO" id="jhH-OH-tEJ" customClass="SellInformationViewControllerOne" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IsV-Yu-NtJ"/>
                         <viewControllerLayoutGuide type="bottom" id="e1V-Gg-pxI"/>
@@ -521,7 +521,7 @@
         <!--Sell Notification View Controller-->
         <scene sceneID="X2V-ko-whS">
             <objects>
-                <viewController storyboardIdentifier="SellNotificationViewController" id="U3L-k4-r3K" customClass="SellNotificationViewController" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellNotificationViewController" id="U3L-k4-r3K" customClass="SellNotificationViewController" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zm1-ux-SUG"/>
                         <viewControllerLayoutGuide type="bottom" id="MAC-mb-0Ph"/>
@@ -534,7 +534,7 @@
                                 <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BikeNotificationCell" rowHeight="120" id="u8h-J0-f2s" customClass="BikeNotificationCell" customModule="BhatBhate" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BikeNotificationCell" rowHeight="120" id="u8h-J0-f2s" customClass="BikeNotificationCell" customModule="GharSanjal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u8h-J0-f2s" id="IfG-kz-Bdb">
@@ -638,7 +638,7 @@
         <!--Credit Buyer Info View Controller-->
         <scene sceneID="EAp-9y-Ird">
             <objects>
-                <viewController storyboardIdentifier="CreditBuyerInfoViewController" id="bp0-cd-br7" customClass="CreditBuyerInfoViewController" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditBuyerInfoViewController" id="bp0-cd-br7" customClass="CreditBuyerInfoViewController" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AGn-gn-RSs"/>
                         <viewControllerLayoutGuide type="bottom" id="hPs-OG-RrJ"/>
@@ -779,7 +779,7 @@
         <!--Sell Information View Controller Two-->
         <scene sceneID="zkS-j5-KjE">
             <objects>
-                <viewController storyboardIdentifier="SellInformationViewControllerTwo" automaticallyAdjustsScrollViewInsets="NO" id="gqH-0j-t2v" customClass="SellInformationViewControllerTwo" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellInformationViewControllerTwo" automaticallyAdjustsScrollViewInsets="NO" id="gqH-0j-t2v" customClass="SellInformationViewControllerTwo" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXe-FW-z12"/>
                         <viewControllerLayoutGuide type="bottom" id="Zrv-le-1om"/>
@@ -842,7 +842,7 @@
                                                 <color key="textColor" red="0.10980392160000001" green="0.1529411765" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-hQ-l0b" customClass="StarRatingView" customModule="BhatBhate" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-hQ-l0b" customClass="StarRatingView" customModule="GharSanjal" customModuleProvider="target">
                                                 <rect key="frame" x="112.5" y="420.5" width="150" height="20"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -1043,7 +1043,7 @@
         <!--Camera Aperture View Controller-->
         <scene sceneID="Tmk-1n-gBo">
             <objects>
-                <viewController storyboardIdentifier="CameraApertureViewController" id="qg9-lw-SyX" customClass="CameraApertureViewController" customModule="BhatBhate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraApertureViewController" id="qg9-lw-SyX" customClass="CameraApertureViewController" customModule="GharSanjal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="619-Mb-xmb"/>
                         <viewControllerLayoutGuide type="bottom" id="LEX-ob-e08"/>

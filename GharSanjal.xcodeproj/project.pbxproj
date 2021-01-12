@@ -138,7 +138,7 @@
 		305D65B81FC2C36F00835685 /* ProfileViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewPresenter.swift; sourceTree = "<group>"; };
 		305D65BA1FC2C4AD00835685 /* AppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
 		305D65BD1FC2D42C00835685 /* EditProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePresenter.swift; sourceTree = "<group>"; };
-		3065B88F1F1710F900CBF37F /* BhatBhate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhatBhate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3065B88F1F1710F900CBF37F /* GharSanjal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GharSanjal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3065B8921F1710F900CBF37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3065B8971F1710F900CBF37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3065B89A1F1710F900CBF37F /* BhatBhate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BhatBhate.xcdatamodel; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A58F4C21F7006400F8DF7B /* EsewaSDK.framework */,
-				3065B8911F1710F900CBF37F /* BhatBhate */,
+				3065B8911F1710F900CBF37F /* GharSanjal */,
 				3065B8901F1710F900CBF37F /* Products */,
 				5C2A16A723C50BC70AB89935 /* Pods */,
 				C9A6397A87448FB13A2255C5 /* Frameworks */,
@@ -314,12 +314,12 @@
 		3065B8901F1710F900CBF37F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3065B88F1F1710F900CBF37F /* BhatBhate.app */,
+				3065B88F1F1710F900CBF37F /* GharSanjal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3065B8911F1710F900CBF37F /* BhatBhate */ = {
+		3065B8911F1710F900CBF37F /* GharSanjal */ = {
 			isa = PBXGroup;
 			children = (
 				E44485E61F25C1720020DD91 /* BhatBhate.entitlements */,
@@ -332,7 +332,7 @@
 				3065B8B61F1716DA00CBF37F /* Storyboards */,
 				3065B8B51F1716D000CBF37F /* Supporting Files */,
 			);
-			path = BhatBhate;
+			path = GharSanjal;
 			sourceTree = "<group>";
 		};
 		3065B8AB1F17166600CBF37F /* Application */ = {
@@ -666,9 +666,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3065B88E1F1710F900CBF37F /* BhatBhate */ = {
+		3065B88E1F1710F900CBF37F /* GharSanjal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3065B8A41F1710F900CBF37F /* Build configuration list for PBXNativeTarget "BhatBhate" */;
+			buildConfigurationList = 3065B8A41F1710F900CBF37F /* Build configuration list for PBXNativeTarget "GharSanjal" */;
 			buildPhases = (
 				C2D9482D9FD55A14E14DA3D3 /* [CP] Check Pods Manifest.lock */,
 				3065B88B1F1710F900CBF37F /* Sources */,
@@ -682,9 +682,9 @@
 			);
 			dependencies = (
 			);
-			name = BhatBhate;
+			name = GharSanjal;
 			productName = BhatBhate;
-			productReference = 3065B88F1F1710F900CBF37F /* BhatBhate.app */;
+			productReference = 3065B88F1F1710F900CBF37F /* GharSanjal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -695,7 +695,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1160;
-				ORGANIZATIONNAME = Andmine;
+				ORGANIZATIONNAME = Cospirit;
 				TargetAttributes = {
 					3065B88E1F1710F900CBF37F = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -713,7 +713,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3065B88A1F1710F900CBF37F /* Build configuration list for PBXProject "BhatBhate" */;
+			buildConfigurationList = 3065B88A1F1710F900CBF37F /* Build configuration list for PBXProject "GharSanjal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -727,7 +727,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3065B88E1F1710F900CBF37F /* BhatBhate */,
+				3065B88E1F1710F900CBF37F /* GharSanjal */,
 			);
 		};
 /* End PBXProject section */
@@ -1122,7 +1122,7 @@
 			baseConfigurationReference = DDD31925520ECE3817468A76 /* Pods-BhatBhate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BhatBhate/BhatBhate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gharsanjal/BhatBhate.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
@@ -1130,9 +1130,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BhatBhate/Info.plist;
+				INFOPLIST_FILE = GharSanjal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andmine.BhatBhate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cospirit.GharSanjal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1144,16 +1144,16 @@
 			baseConfigurationReference = 65C917ADABF606429C02FE2F /* Pods-BhatBhate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BhatBhate/BhatBhate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gharsanjal/BhatBhate.entitlements;
 				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BhatBhate/Info.plist;
+				INFOPLIST_FILE = GharSanjal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andmine.BhatBhate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cospirit.GharSanjal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1163,7 +1163,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3065B88A1F1710F900CBF37F /* Build configuration list for PBXProject "BhatBhate" */ = {
+		3065B88A1F1710F900CBF37F /* Build configuration list for PBXProject "GharSanjal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3065B8A21F1710F900CBF37F /* Debug */,
@@ -1172,7 +1172,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3065B8A41F1710F900CBF37F /* Build configuration list for PBXNativeTarget "BhatBhate" */ = {
+		3065B8A41F1710F900CBF37F /* Build configuration list for PBXNativeTarget "GharSanjal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3065B8A51F1710F900CBF37F /* Debug */,
