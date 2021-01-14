@@ -24,4 +24,5 @@ target 'BhatBhate' do
     #pod 'Socket.IO-Client-Swift', '~> 13.1.0'
     pod 'Starscream', '~> 3.0.2'
     pod 'Fusuma'
+    pod 'DLRadioButton', '~> 1.4'
 end

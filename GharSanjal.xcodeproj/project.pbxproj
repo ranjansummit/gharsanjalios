@@ -218,7 +218,7 @@
 		E42F56621FE3D6440042C4B1 /* Brands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
 		E42F56631FE3D6440042C4B1 /* BikeProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeProperties.swift; sourceTree = "<group>"; };
 		E42F56641FE3D6440042C4B1 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		E44485E61F25C1720020DD91 /* BhatBhate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BhatBhate.entitlements; sourceTree = "<group>"; };
+		E44485E61F25C1720020DD91 /* GharSanjal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GharSanjal.entitlements; sourceTree = "<group>"; };
 		E45C0D4020410C300036BD6B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		E45C0D42204113220036BD6B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		E45C0D4420413F7A0036BD6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -322,7 +322,7 @@
 		3065B8911F1710F900CBF37F /* GharSanjal */ = {
 			isa = PBXGroup;
 			children = (
-				E44485E61F25C1720020DD91 /* BhatBhate.entitlements */,
+				E44485E61F25C1720020DD91 /* GharSanjal.entitlements */,
 				3065B8B01F17168400CBF37F /* Utilities */,
 				3065B8AF1F17167900CBF37F /* Libraries */,
 				3065B8AE1F17167400CBF37F /* Services */,
@@ -1122,7 +1122,7 @@
 			baseConfigurationReference = DDD31925520ECE3817468A76 /* Pods-BhatBhate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gharsanjal/BhatBhate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gharsanjal/GharSanjal.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
@@ -1144,7 +1144,7 @@
 			baseConfigurationReference = 65C917ADABF606429C02FE2F /* Pods-BhatBhate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gharsanjal/BhatBhate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gharsanjal/GharSanjal.entitlements;
 				DEVELOPMENT_TEAM = 2UZH5H23YH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

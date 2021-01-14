@@ -84,7 +84,7 @@ class SellLandingViewController: RootViewController, PushNotificationBadgePresen
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnAddBike.layer.cornerRadius = 20
+        viewAddBike.layer.cornerRadius = 20
         // self.title = "Sell a Bike"
         tableView.estimatedRowHeight = 240
         tableView.rowHeight = UITableView.automaticDimension
